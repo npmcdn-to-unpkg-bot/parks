@@ -11,6 +11,7 @@ import { ParkDetailComponent } from './detail.component';
   selector: 'my-app',
   template: `
   <h1><a [routerLink]="['Dashboard']">{{title}}</a></h1>
+  <h5>{{subtitle}}</h5>
     <router-outlet></router-outlet>
   `,
   styleUrls: ['app/app.component.css'],
@@ -35,4 +36,5 @@ import { ParkDetailComponent } from './detail.component';
 ])
 export class AppComponent {
   title = 'National Parks Weather';
+  subtitle = 'Up-to-date weather for US national parks';
 }

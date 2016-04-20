@@ -27,3 +27,9 @@ button:disabled {
   color: #ccc; 
   cursor: auto;
 }
+.main-col {
+    background: #fefefe;
+    max-width: 500px;
+    padding: 5px 15px 15px 15px;
+    margin: 0;
+}
