@@ -4,6 +4,7 @@
         <img src="{{park.icon}}"><br>
         {{park.summary}}<br>
         {{park.temp_f}}&deg;F | {{park.temp_c}}&deg;C<br>
+         (<a target="_blank" href="https://www.google.com/maps/@{{park.lat}},{{park.lng}},11z">google map</a>)<br>
             <!--<li>Latitude, Longitude: {{park.lat}}, {{park.lng}}</li>-->
         <button *ngIf="!showme" (click)="showme=true">Show Forecast</button>
         <button *ngIf="showme" (click)="showme=false">Hide Forecast</button> 
