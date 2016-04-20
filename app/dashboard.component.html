@@ -1,0 +1,5 @@
+<div class="grid grid-pad">
+    <ul>
+        <li *ngFor="#park of parks" (click)="gotoDetail(park)"><button>{{park.name}}</button></li>
+    </ul>
+</div>

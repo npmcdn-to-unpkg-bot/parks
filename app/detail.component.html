@@ -1,0 +1,18 @@
+<div style="background: #fefefe; max-width: 500px; padding-top: 5px; padding-left: 15px; padding-right: 15px; padding-bottom: 15px">
+<div *ngIf="park">
+    <h2>{{park.name}}</h2>
+        <img src="{{park.icon}}"><br>
+        {{park.summary}}<br>
+        {{park.temp_f}}&deg;F | {{park.temp_c}}&deg;C<br>
+            <!--<li>Latitude, Longitude: {{park.lat}}, {{park.lng}}</li>-->
+        <button *ngIf="!showme" (click)="showme=true">Show Forecast</button>
+        <button *ngIf="showme" (click)="showme=false">Hide Forecast</button> 
+        <div *ngIf="showme">
+            <div *ngFor="#forecast of park.forecast.txt_forecast.forecastday">
+                <hr>
+                <h4>{{forecast.title}}</h4>
+                <img src="{{forecast.icon_url}}">
+                <p>{{forecast.fcttext}}</p>
+            </div>
+        </div>
+</div>
