@@ -12,3 +12,5 @@ _temp
 !**/*e2e-spec.js
 !karma*.js
 !protractor*.js
+*swp
+*swo
