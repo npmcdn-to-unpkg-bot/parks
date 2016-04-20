@@ -6,5 +6,5 @@ export class Park {
   image: string;
   temp_c: number;
   temp_f: number;
-  forecast: json;
+  forecast: string;
 }

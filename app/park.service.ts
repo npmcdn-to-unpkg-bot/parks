@@ -14,13 +14,6 @@ export class ParkService {
                   .then(this.extractData)
                   .catch(this.handleError);
   }
-
-  getParksSlowly() {
-      return this.http.get(this._parksUrl)
-                  .toPromise()
-                  .then(this.extractData)
-                  .catch(this.handleError);
-  }
   getPark(id: number) {
       return this.http.get(this._parksUrl)
                   .toPromise()
