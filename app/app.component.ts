@@ -1,7 +1,5 @@
-import { Component } from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import {provide}           from 'angular2/core';
-import {LocationStrategy, HashLocationStrategy} from 'angular2/router';
+import { provide, Component } from 'angular2/core';
+import { LocationStrategy, HashLocationStrategy, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 
 import { ParkService } from './park.service';
 import { DashboardComponent } from './dashboard.component';
@@ -23,13 +21,13 @@ import { ParkDetailComponent } from './detail.component';
 })
 @RouteConfig([
   {
-    path: '/dashboard',
+    path: '/',
     name: 'Dashboard',
     component: DashboardComponent,
     useAsDefault: true
   },
   {
-    path: '/detail/:id',
+    path: '/:slug',
     name: 'ParkDetail',
     component: ParkDetailComponent
   }

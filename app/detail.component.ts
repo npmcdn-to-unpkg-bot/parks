@@ -18,8 +18,8 @@ export class ParkDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-    let id = +this._routeParams.get('id');
-    this._parkService.getPark(id)
+    let slug = this._routeParams.get('slug');
+    this._parkService.getPark(slug)
       .then(park => this.park = park);
   }
 }

@@ -12,6 +12,7 @@
             <div *ngFor="#forecast of park.forecast.txt_forecast.forecastday">
                 <hr>
                 <h4>{{forecast.title}}</h4>
+                <p>{{forecast.date}}</p>
                 <img src="{{forecast.icon_url}}">
                 <p>{{forecast.fcttext}}</p>
             </div>

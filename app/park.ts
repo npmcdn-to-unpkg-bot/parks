@@ -7,4 +7,5 @@ export class Park {
   temp_c: number;
   temp_f: number;
   forecast: string;
+  slug: string;
 }

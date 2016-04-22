@@ -1,5 +1,5 @@
 /* tslint:disable:no-unused-variable */
-import { AppComponent } from './app.component';
+import {Park} from './park';
 
 import {
   expect, it, iit, xit,
@@ -18,17 +18,8 @@ interface Done {
   fail: (err: any) => void;
 }
 
-////////  SPECS  /////////////
-
-/// Delete this
-describe('Smoke test', () => {
-  it('should run a passing test', () => {
-    expect(true).toEqual(true, 'should pass');
-  });
-});
-
-describe('AppComponent with new', function () {
-    it('should instantiate component', () => {
-      expect(new AppComponent()).not.toBeNull('Whoopie!');
+describe('Park with new', function () {
+    it('should instantiate service', () => {
+      expect(new Park()).not.toBeNull('Whoopie!');
     });
 });

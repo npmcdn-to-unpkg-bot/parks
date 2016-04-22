@@ -6,7 +6,7 @@ import {Observable}     from 'rxjs/Observable';
 @Injectable()
 export class ParkService {
   constructor (private http: Http) {}
-  private _parksUrl = 'http://parks-dev.us-west-2.elasticbeanstalk.com/parks/';  // URL to web api
+  private _parksUrl = 'http://parks-dev.us-west-2.elasticbeanstalk.com/parks/';
 
   getParks (): Promise<Park[]> {
   return this.http.get(this._parksUrl)
@@ -14,12 +14,11 @@ export class ParkService {
                   .then(this.extractData)
                   .catch(this.handleError);
   }
-  getPark(id: number) {
-      return this.http.get(this._parksUrl)
-                  .toPromise()
-                  .then(this.extractData)
-                  .catch(this.handleError)
-                  .then(parks => parks.filter(park => park.id === id)[0]);
+  getPark(slug: string) {
+      return this.http.get(this._parksUrl + slug + '/')
+                      .toPromise()
+                      .then(this.extractData)
+                      .catch(this.handleError)
   }
   private extractData(res: Response) {
     if (res.status < 200 || res.status >= 300) {
