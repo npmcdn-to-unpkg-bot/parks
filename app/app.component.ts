@@ -8,7 +8,7 @@ import { ParkDetailComponent } from './detail.component';
 @Component({
   selector: 'my-app',
   template: `
-  <h1><a [routerLink]="['Dashboard']">{{title}}</a></h1>
+  <h1><a [routerLink]="['Dashboard']">{{title}} <i class="wi wi-lightning"></i></a></h1>
   <h5>{{subtitle}}</h5>
     <router-outlet></router-outlet>
   `,
