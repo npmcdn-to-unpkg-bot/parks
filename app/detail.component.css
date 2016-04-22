@@ -32,4 +32,5 @@ button:disabled {
     max-width: 500px;
     padding: 5px 15px 15px 15px;
     margin: 0;
+    border-radius: 4px;
 }
