@@ -6,17 +6,17 @@ h1 {
 }
 
 h1 a {
-    color: white;
+  color: white;
   text-decoration: none;
 }
 
 h1 a:visited, a:link {
-    color: white;
+  color: white;
   text-decoration: none;
 }
 
 h1 a:hover {
-    color: #ccc;
+  color: #ccc;
   text-decoration: none;
 }
 

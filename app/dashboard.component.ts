@@ -27,4 +27,8 @@ export class DashboardComponent implements OnInit {
     let link = ['ParkDetail', { slug: park.slug }];
     this._router.navigate(link);
   }
+
+  parksByState() {
+    return this.parks
+  }
 }
