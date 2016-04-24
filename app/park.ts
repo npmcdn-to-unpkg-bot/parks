@@ -8,4 +8,5 @@ export class Park {
   temp_f: number;
   forecast: string;
   slug: string;
+  state: string;
 }

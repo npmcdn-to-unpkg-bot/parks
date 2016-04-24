@@ -6,10 +6,10 @@ import { ParkService } from './park.service';
 
 @Component({
   selector: 'my-dashboard',
-  templateUrl: 'app/dashboard.component.html',
-  styleUrls: ['app/dashboard.component.css']
+  templateUrl: 'app/parks.component.html',
+  styleUrls: ['app/parks.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class ParksComponent implements OnInit {
 
   parks: Park[] = [];
 
@@ -26,9 +26,5 @@ export class DashboardComponent implements OnInit {
   gotoDetail(park: Park) {
     let link = ['ParkDetail', { slug: park.slug }];
     this._router.navigate(link);
-  }
-
-  parksByState() {
-    return this.parks
   }
 }

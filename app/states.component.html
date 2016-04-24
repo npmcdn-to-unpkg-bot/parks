@@ -1,0 +1,5 @@
+<div>
+    <ul>
+        <li *ngFor="#park of parks" (click)="gotoDetail(park)"><button>({{park.state}}) {{park.name}}</button></li>
+    </ul>
+</div>

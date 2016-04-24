@@ -6,6 +6,7 @@ import {ROUTER_PROVIDERS}  from 'angular2/router';
 import {provide}           from 'angular2/core';
 import {LocationStrategy, HashLocationStrategy} from 'angular2/router';
 import {enableProdMode} from 'angular2/core';
+import {GoogleAPI} from './gmap.service';
 enableProdMode()
 
-bootstrap(AppComponent, [HTTP_PROVIDERS]);
+bootstrap(AppComponent, [GoogleAPI, HTTP_PROVIDERS]);
