@@ -5,7 +5,7 @@ import { Park } from './park';
 import { ParkService } from './park.service';
 
 @Component({
-  selector: 'my-dashboard',
+  selector: 'parks',
   templateUrl: 'app/parks.component.html',
   styleUrls: ['app/parks.component.css']
 })
