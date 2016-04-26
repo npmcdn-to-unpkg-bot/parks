@@ -20,9 +20,6 @@ h5 {
   margin: 0;
   padding: 0 0 6px 0;
 }
-body { 
-  margin: 2em; 
-}
 body, input[text], button { 
   color: #888; 
   font-family: Cambria, Georgia; 
