@@ -6,7 +6,7 @@ import {Observable}     from 'rxjs/Observable';
 @Injectable()
 export class ParkService {
   constructor (private http: Http) {}
-  private _parksUrl = 'http://parks-dev.us-west-2.elasticbeanstalk.com/parks/';
+  private _parksUrl = 'http://oneapi.us-west-2.elasticbeanstalk.com/weather/parks/';
 
   getParks (): Promise<Park[]> {
   return this.http.get(this._parksUrl)
